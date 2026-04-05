@@ -19,6 +19,7 @@ const Intro = () => {
   const refs = useRef<(HTMLImageElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const radialRef = useRef<HTMLDivElement>(null);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   useEffect(() => {
     const images = refs.current.filter(Boolean);
@@ -71,7 +72,7 @@ const Intro = () => {
             ref={(el) => {
               refs.current[i] = el;
             }}
-            src={src.src}
+            src={`${basePath}${src.src}`}
             alt={`Intro image ${i + 1}`}
             fill
             className="object-cover absolute inset-0"
