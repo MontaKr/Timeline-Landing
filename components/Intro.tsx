@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const IMAGES = [
   { src: "/1.jpg" },
@@ -19,6 +19,7 @@ const Intro = () => {
   const refs = useRef<(HTMLImageElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const radialRef = useRef<HTMLDivElement>(null);
+
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   useEffect(() => {

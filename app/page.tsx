@@ -8,7 +8,7 @@ export default function Home() {
       <Text variant="logo" delay={0.6}>
         Next Timeline
       </Text>
-      <Text delay={INTRO_END_DELAY_SEC}>Blades Mark the Moment </Text>
+      <Text delay={INTRO_END_DELAY_SEC}>Blades Mark the Moment</Text>
     </main>
   );
 }

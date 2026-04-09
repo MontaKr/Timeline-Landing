@@ -1,8 +1,8 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
-import { useEffect, useRef } from "react";
 
 type TextProps = {
   delay?: number;
